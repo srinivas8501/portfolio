@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;    
+            box-sizing: border-box;
+            scroll-behavior: smooth;   
+        }
+        ul li:hover{
+              background:linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+              border-radius: 25px; 
+              color: black;    
+        }
+        h4{
+            cursor: pointer;
+        }
+        .offcanvas{
+            background-color: #6e00be;
+        }
+        .row{
+            min-height: 500px;   
+           background:  radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+           overflow: hidden;
+        }  
+        .button:hover {
+            background: linear-gradient(to right, #ff512f, #f09819);
+        } 
+        .footer{
+            background:linear-gradient(to right, #0f0c29, #302b63, #24243e);
+        }
+        
+    </style>
+</head>
+<body>
+    <!----------------------------create navbar---------------------------------->
+    <nav class="navbar navbar-expand-sm bg-light  fixed-top">
+        <div class="container-fluid">
+       <!--navbar-brand-->         
+      <a href="#" class="navbar-brand "><img src="https://scontent.fhyd11-2.fna.fbcdn.net/v/t39.30808-6/376849043_1820285975053924_714118740381415142_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=oyRBvQCaLbQAX_Yhn4O&_nc_ht=scontent.fhyd11-2.fna&oh=00_AfBsunIp6c_CTskquGnI_bZxg3Y5mBnynCRtRJl6ZW_DUw&oe=65B545BC" alt="" height="60" width="200" data-bs-target="#canva"  data-bs-toggle="offcanvas"></a> 
+      <!--toggler-button-create-->
+       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+       </button> 
+       <!--toggler-button-close-->  
+       <!--navbar-collapse-start-->  
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <!--nav-list-->
+                 <ul class="navbar-nav text-uppercase" >
+                    <li class="nav-item"><a href="#details" class="nav-link btn btn-primary text-white">home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">skills</a></li>
+                    <li class="nav-item"><a href="#modals" class="nav-link" data-bs-toggle="modal">login</a></li>
+                    <li class="nav-item"><a href="#modals2" class="nav-link" data-bs-toggle="modal">register</a></li>
+                 </ul>
+                </div>
+        <!--navbar-collapse-end--> 
+        </div>
+    </nav>
+    <!-------------------------navbar-close------------------------------------->
+    <!--------row1-details---------->
+    <div class="row w-100  text-white border-bottom align-items-center" id="details" >
+        <div class="col-6 text-center  p-5  ">
+                <h1 class=""><span style="color: red;">I'm </span>srinivas and</h1>
+                  <p>I am a frontend/web developer</p>
+                     <a href="SRI112.pdf" download><button class="btn text-white button border" >Resume</button></a>
+        </div>
+        <div class="col-6 p-5 ">
+            <img src="https://scontent.fhyd11-2.fna.fbcdn.net/v/t39.30808-6/407698440_1869837243432130_6450840267065527013_n.jpg?stp=dst-jpg_p843x403&_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=BN2ePWMKoRMAX-udXLH&_nc_ht=scontent.fhyd11-2.fna&oh=00_AfCuPOId2ewFDaApCOiA_tDn9SYU2i9YiabZsviH60zeWQ&oe=65B48ABC" alt="" width="300" height="300" class="rounded-circle mt-5 " >
+              <a href="https://wa.link/e1do5l"><img src="https://png.pngtree.com/png-vector/20230225/ourmid/pngtree-whatsapp-icon-social-media-png-image_6618452.png" alt="" height="60" width="60" class="fixed-bottom m-3  "></a>
+        </div>
+    </div>
+    <!-----------row1-close---------->
+    <!-----------row2-about---------->
+    <div class="row text-white  w-100 border-bottom align-items-center" id="about"> 
+    <div class="col-4">
+        <img src="https://i.pinimg.com/736x/33/a1/1e/33a11ec7801981f093f10698e251f954.jpg" alt="" width="400" height="300" class="rounded-circle mt-5 " >
+    </div>
+    <div class="col-8">
+        <h1>About:</h1>
+        <p>I am a frontend developer with strong coding and programming skills.I  am fluent in more than 5 programming languages and am extremely goal and project-oriented.</p>
+        <!--collapse-->
+        <div class="collapse" id="colls">
+            <div class="collapse-body">
+                   <p>Expertise skills in React Js, HTML5, CSS3, JavaScript and Bootstrap in the frontend development of web.</p>        
+            </div>
+        </div>
+        <!--collapse-close-->
+        <button class="btn  text-white button border" data-bs-toggle="collapse" data-bs-target="#colls" >Read more</button>
+    </div>
+  </div>
+  <!-------------row2-close-------------->
+  <!--row3-skills-->
+  <div class="row text-white  w-100 p-3 border-bottom align-items-center" id="skills">
+    <h2>Skills:</h2>
+    <h6>HTML5</h6>
+    <div class="progress">
+        <div class="progress-bar" style="width: 100%;">100%</div>
+    </div>
+    <h6>CSS</h6>
+    <div class="progress">
+        <div class="progress-bar" style="width: 90%;">90%</div>
+    </div>
+    <h6>JAVASCRIPT</h6>
+    <div class="progress">
+        <div class="progress-bar" style="width: 80%;">80%</div>
+    </div>
+    <h6>BOOTSTRAP</h6>
+    <div class="progress">
+        <div class="progress-bar" style="width: 90%;">90%</div>
+    </div>
+    <h6>REACT JS</h6>
+    <div class="progress">
+        <div class="progress-bar" style="width: 90%;">90%</div>
+    </div>
+
+  </div>
+  <!-------------row3-close----------->
+  <!-------------row4-projects-------->
+  <div class="row text-white  w-100 p-3 border-bottom" id="projects">
+    <h2>Projects:</h2>
+    <div class="col-3 border " style="color: orangered;">
+         <img src="https://cdn.dribbble.com/users/18607/screenshots/1540137/limbo.gif" alt="" width="300" height="200" class="mt-2">
+         <h4 class="pt-1">1 )Product landing page</h4>
+         <p class="text-uppercase">html,css,bootstrap</p>
+    </div>
+    <div class="col-3 border " style="color: orangered;">
+        <img src="https://static.joomlart.com/images/ja-template/admin/product-update/Vertical-Horizontal-navigation.gif" alt="" width="300" height="200" class="mt-2">
+        <h4 class="pt-1">2 )Admin dashboard page</h4>
+        <p class="text-uppercase">html,css</p>
+    </div>
+    <div class="col-3 border " style="color: orangered;">
+        <img src="https://websitelearners.com/content/uploads/2020/11/download.gif" alt="" width="300" height="200" class="mt-2">
+        <h4 class="pt-1">3 )Ecom  page</h4>
+        <p class="text-uppercase">html,css,bootstrap</p>
+    </div>
+    <div class="col-3 border " style="color: orangered;">
+        <img src="https://cdn.dribbble.com/users/57127/screenshots/1001576/2.gif" alt="" width="300" height="200" class="mt-2">
+        <h4 class="pt-1">4 )Blog page</h4>
+        <p class="text-uppercase">html,css</p>
+    </div>
+  </div>
+  <!------------row4-close--------->
+  <!------------row5-contact------->
+  <div class="row text-white  w-100 p-3 border-bottom align-items-center">
+    <h2><span style="color:rgb(221, 247, 221);">Contact</span> Me:</h2>
+    <form action="action.php" method="get" >
+        <label for="" class="form-label">Name:</label>
+        <input type="text" class="form-control bg-light" placeholder="enter your name">
+        <label for="" class="form-label">Phone number:</label>
+        <input type="tel" class="form-control bg-light" placeholder="enter number" maxlength="10">
+        <label for="">message</label>
+        <textarea name="" id="" cols="30" rows="10" placeholder="type message" class="form-control bg-light"></textarea>
+        <button class="btn btn-danger form-control m-2 w-50 justify-content-center button" type="submit">Message Me</button>
+    </form>
+  </div>
+  <!------------row5-close----------->
+  <!------footer------>
+  <div class="footer  text-center p-1 pt-3 text-white w-100">
+    <p>copyright@sree</p>
+  </div>
+  <!-----footer-close---->
+  
+    <!-------------------create offcanvas------------------------>
+    <div class="offcanvas offcanvas-start text-white text-uppercase" id="canva">
+        <!--offcanvas-header-->
+        <div class="offcanvas-header ">
+            <h1 >SREENIVAS</h1>           
+            <!--dissmiss-button--><button class="btn-close bg-light" data-bs-dismiss="offcanvas"></button><!--dissmiss-button-->
+        </div>
+        <!--offcanvas-body-->
+        <div class="offcanvas-body ">
+            <ul class="navbar-nav " >
+                <li class="nav-item">
+                    <a href="#hello" class="nav-link dropdown-toggle p-2" data-bs-toggle="collapse" >personal information</a></li>
+                <div class="collapse  text-white" id="hello">
+                    <ul class="border  rounded">
+                        <li>Name:Kakarla Srinivasulu</li>
+                        <li>Age:22</li>
+                        <li>Place:Hyderabad</li>
+                        <li>Qualification:Btech</li>
+                    </ul>               
+                   </div>
+                <li class="nav-item"><a href="#hello1" class="nav-link dropdown-toggle p-2" data-bs-toggle="collapse">educational details</a></li>
+                <div class="collapse  text-white" id="hello1">
+                    <ul class="border  rounded">
+                        <li>b.tech:60%</li>
+                        <li>intermediate:95%</li>
+                        <li>ssc:77%</li>
+                    </ul>
+                   </div>
+                <li class="nav-item"><a href="#hello2" class="nav-link dropdown-toggle p-2" data-bs-toggle="collapse">skills</a></li>
+                <div class="collapse  text-white" id="hello2">
+                    <ul class="border  rounded">
+                        <li>html5</li>
+                        <li>css3</li>
+                        <li>java script</li>
+                        <li>bootstrap</li>
+                        <li>react js</li>
+                    </ul>
+                   </div>
+                <li class="nav-item"><a href="#hello3" class="nav-link dropdown-toggle p-2" data-bs-toggle="collapse">projects</a></li>
+                <div class="collapse  text-white" id="hello3">
+                    <ul class="border  rounded">
+                        <li>product landing page</li>
+                        <li>bmi calculator</li>
+                        <li>ecomerce page</li>
+                        <li>weather app</li>
+                        <li>quiz app</li>
+                    </ul>
+                </div>
+             </ul>
+        </div>
+        
+        <!--offcanvas-body-close-->   
+        </div>
+        <!-------------------------offcanvas-close--------------------------> 
+        <!-------------------the modal------------------------------->
+<div class="modal mt-5" id="modals">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!--modal header-->
+            <div class="modal-header ">
+                <h2 class="modal-title">Sign In</h2>
+                <button class=" btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!--modal body-->
+            <div class="modal-body">
+                <form action="action.php" method="get" class="was-validated">
+                <label for="" class="form-label">User Name:</label>
+                <input type="text" placeholder="enter username" class="form-control" required>
+                <div class="valid-feedback">Valid Username</div>
+                <div class="invalid-feedback text-capitalize">please enter username</div>
+                <label for="" class="form-label">Password:</label>
+                <input type="password" placeholder="enter password" class="form-control"required>
+                <div class="valid-feedback">correct</div>
+                <div class="invalid-feedback text-capitalize">please enter password</div>
+                <input type="checkbox" class="form-check-input" required><a href="#" id="terms" class="text-decoration-none">Terms and conditions</a><br>
+                <input type="submit" class="btn btn-danger mt-3 form-control" value="Login">
+            </div>
+            
+        </form>
+        </div>
+    </div>
+
+</div>
+<!----------------------modal-pop up-close---------------------> 
+<!--------------the modal2------------->
+<div class="modal " id="modals2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!--modal header-->
+            <div class="modal-header ">
+                <h2 class="modal-title">Register</h2>
+                <button class=" btn-close  bg-primary " data-bs-dismiss="modal" ></button>
+            </div>
+            <!--modal body-->
+            <div class="modal-body">
+                <form action="action.php" method="get" class="was-validated">
+                <label for="" class="form-label">Email or Number:</label>
+                <input type="text" placeholder="enter email or number" class="form-control" required>
+                <div class="valid-feedback">Valid Username</div>
+                <div class="invalid-feedback text-capitalize">please enter username</div>
+                <label for="" class="form-label"> Enter Password:</label>
+                <input type="password" placeholder="enter password" class="form-control"required>
+                <div class="valid-feedback">correct</div>
+                <div class="invalid-feedback text-capitalize">please enter password</div>
+                <label for="" class="form-label"> Re Enter Password:</label>
+                <input type="password" placeholder="Re enter password" class="form-control"required>
+                <div class="valid-feedback">correct</div>
+                <div class="invalid-feedback text-capitalize">please enter password</div>
+                <label for="" class="form-label">Date Of Birth</label>
+                <input type="date" class="form-control" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback text-capitalize">please enter DOB</div>
+                <label for="" class="form-label">Zip code:</label>
+                <input type="tel" class="form-control" required maxlength="6">
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback text-capitalize">please enter Zip</div>
+                <label for="" class="form-label mt-1">Gender:</label>
+                <input type="radio" class="form-check-input" name="gender">male
+                <input type="radio" class="form-check-input" name="gender">female
+                <input type="radio" class="form-check-input" name="gender">others<br>
+                <input type="checkbox" class="form-check-input mt-1" required><a href="#" id="terms" class="text-decoration-none mt-1">Terms and conditions</a><br>
+                <input type="submit" class="btn btn-primary mt-3 form-control " value="Register">
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------modal2-close---------------> 
+</body>
+</html>
